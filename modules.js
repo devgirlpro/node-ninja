@@ -1,6 +1,7 @@
 const {names, ages} = require('./people');
+const os = require('os');
 
-// const {names, ages} = require('./people')
 
 
- console.log(names, ages)
+//  console.log(names, ages)
+ console.log("OS =>", os.platform(), os.homedir())
