@@ -1,6 +1,6 @@
-const names = require('./people');
+const info = require('./people');
 
 // const {names, ages} = require('./people')
 
 
- console.log(names)
+ console.log(info.names, info.ages)
