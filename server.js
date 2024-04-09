@@ -7,8 +7,8 @@ const server = http.createServer((req, res) => {
     //console.log(req.method, req.url, req.headers);
 
     //lodash
-    const num = _.random(0, 20);
-    console.log("num => ", num)
+    // const num = _.random(0, 20);
+    // console.log("num => ", num)
 
 //lodash method to call the finction onöy once
     // const greet = _.once(() => {
@@ -34,7 +34,8 @@ const server = http.createServer((req, res) => {
           path += 'about.html';
           res.statusCode = 200;
           break;
-//redirect about-me url to about 
+          
+        //redirect about-me url to about 
         case '/about-us':
           res.statusCode = 301;
           res.setHeader('Location', '/about');
