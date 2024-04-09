@@ -1,8 +1,22 @@
 const http = require('http');
 const fs = require('fs');
+//lodash
+const _ = require('lodash')
 
 const server = http.createServer((req, res) => {
     //console.log(req.method, req.url, req.headers);
+
+    //lodash
+    const num = _.random(0, 20);
+    console.log("num => ", num)
+
+//lodash method to call the finction onöy once
+    // const greet = _.once(() => {
+    //     console.log('Hello')
+    // })
+
+    // greet()
+    // greet()
 
     //set header content type
     res.setHeader('Content-type', 'text/html');
@@ -21,7 +35,7 @@ const server = http.createServer((req, res) => {
           res.statusCode = 200;
           break;
 //redirect about-me url to about 
-        case '/about-me':
+        case '/about-us':
           res.statusCode = 301;
           res.setHeader('Location', '/about');
           res.end();
